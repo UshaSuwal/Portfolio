@@ -58,12 +58,13 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 10%;
-    font-size: 30px;
+    margin-top: 8%;
+    font-size: 22px;
 }
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
+    margin-bottom: 10px;
     
 }
 .header-text h1 span{
@@ -113,13 +114,15 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 .about-col-1{
-    flex-basis: 35%;
+    margin-left: -50px;
+    flex-basis: 40%;
 }
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
 }
 .about-col-2{
+    font-size: 15px;
     flex-basis: 60%;
 }
 .sub-title{
@@ -129,7 +132,7 @@ nav ul li a:hover::after{
 }
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px;
 }
 .tab-links{
     margin-right: 50px;
@@ -161,6 +164,7 @@ nav ul li a:hover::after{
     font-size: 14px;
 }
 .tab-contents{
+    font-size: 12px;
     display: none;
 }
 .tab-contents.active-tab{
