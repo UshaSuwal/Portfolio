@@ -1,0 +1,26 @@
+body{
+    background-color: #080808;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    border: 5px solid #ff004f; /* Adjust the width and color as needed */
+    box-sizing: border-box; /* Ensures that the border width is included in the total width of the body */
+    margin: 30;
+}
+.container{
+    padding: 10px 10%;
+    line-height: 1.5;
+    
+}
+
+h1{
+    color:#ff004f;
+    font-size: 60px;
+}
+
+span{
+    font-weight: bold;
+}
+.points{
+    font-size: 20px;
+    color:#ff004f;
+}

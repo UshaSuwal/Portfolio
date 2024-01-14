@@ -64,11 +64,43 @@ nav ul li a:hover::after{
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
+    
 }
 .header-text h1 span{
     color: #ff004f;
 }
 
+.social-media a{
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-media{
+    margin-top: 30px;
+}
+.social-media a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn2{
+    display: block;
+    margin-top: 50px;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    transition-duration:0.5s;
+}
+.btn2:hover{
+    background: #ff004f;
+}
 /*------------------about----------------*/
 
 #about{
@@ -140,7 +172,7 @@ nav ul li a:hover::after{
 }
 .services-list{
     display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     grid-gap:40px;
     margin-top: 50px;
 }
@@ -162,7 +194,6 @@ nav ul li a:hover::after{
     margin-bottom: 15px;
 }
 .services-list div a{
-    text-decoration: none;
     color: #fff;
     font-size: 12px;
     margin-top: 20px;
