@@ -116,6 +116,7 @@ nav ul li a:hover::after{
 .about-col-1{
     margin-left: -50px;
     flex-basis: 40%;
+    margin-top: -70px;
 }
 .about-col-1 img{
     width: 100%;
@@ -317,6 +318,9 @@ nav ul li a:hover::after{
     display: inline-block;
     background: #ff004f;
 }
+.btn.btn2:hover{
+    background-color: #a4214a;
+}
 .contact-right form{
     width: 100%;
 }
@@ -353,10 +357,27 @@ nav .fa-solid{
     .header-text{
         margin-top: 35%;
         font-size: 16px;
+        margin-left: -20px;
     }
     .header-text h1{
         font-size: 30px;
+        margin-left: -3px;
     }
+    .btn2{
+        font-size: 15px;
+        width: fit-content;
+        margin-left: -20px;
+    }
+    .social-media a{
+        font-size: 20px;
+        display:inline-block;
+        
+    }
+    .social-media{
+        margin-left: -20px;
+    }
+
+    
     nav .fa-solid{
         display: block;
         font-size: 25px;
@@ -382,6 +403,22 @@ nav .fa-solid{
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+
+
+
+
+    .about-col-1{
+        margin-left: 20px;
+        margin-top: -20px;
+    }
+
+
+    .services-list{
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        grid-gap:40px;
+        margin-top: 50px;
     }
 
 
