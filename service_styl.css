@@ -41,9 +41,10 @@ span{
     .points{
         font-size: 15px;
     }
-    #services4 ul span, ol li{
+    #services4 ul li,#services3 li, ol li{
         margin-left: -30px;
     }
+
     
 }
 
