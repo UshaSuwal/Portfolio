@@ -13,13 +13,25 @@ body{
 }
 #header{
     width: 100%;
-    height: 115vh;
-    background-image: url(images/ush.jpg);
+    height: 4rem;
+    background-color: #262626;
     background-size: cover;
     background-position: center;
+    position: fixed;
+    top: 0px;
+    z-index: 50;
 }
 .container{
     padding: 10px 10%;
+}
+
+#hero{
+    margin-top: 2rem;
+    height: 115vh;
+    width: 100%;
+    background-image: url(images/ush.jpg);
+    background-position: center;
+    background-size: cover;
 }
 nav{
     display: flex;
@@ -29,9 +41,13 @@ nav{
     margin-top: -60px;
 }
 .logo{
-    width: 350px;
-    margin-left: -109px;
-    margin-top: 40px;
+    width: 12rem;
+    margin-top: 2.5rem;
+    margin-left: -10rem;
+}
+#sidemenu{
+    margin-top: 2.5rem;
+    
 }
 nav ul li{
     display: inline-block;
@@ -63,13 +79,32 @@ nav ul li a:hover::after{
 }
 .header-text h1{
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: 130px;
     margin-bottom: 10px;
     
 }
 .header-text h1 span{
     color: #ff004f;
 }
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    height: 22px;
+    background-color: rgb(181, 72, 72);
+    animation: blink 1s infinite;
+    vertical-align: middle;
+  }
+
+  @keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  #typed-text{
+    color: #ff004f;
+  }
 
 .social-media a{
     text-decoration: none;
@@ -105,6 +140,7 @@ nav ul li a:hover::after{
 /*------------------about----------------*/
 
 #about{
+    margin-top: 2rem;
     padding: 80px 0;
     color: #ababab;
 }
@@ -348,34 +384,46 @@ nav .fa-solid{
 }
 
 
-@media only screen and (max-width:600px){
-    #header{
-        background-image: url(images/ishh22.jpg);
-        height: 90vh;
 
+
+@media only screen and (max-height:600px){
+    .logo{
+        margin-left: -5rem;
     }
+    #sidemenu{
+        margin-top: 0;
+        
+    }
+    
     .header-text{
-        margin-top: 35%;
-        font-size: 16px;
-        margin-left: -20px;
+        margin-top: 50%;
+        font-size: 40px;
+        margin-bottom: 4rem;
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 80px;
         margin-left: -3px;
+        margin-bottom: 1rem;
+    }
+
+    #hero{
+        background-image: none;
+        margin-top: -6rem;
+       
     }
     .btn2{
-        font-size: 15px;
+        font-size: 30px;
         width: fit-content;
-        margin-left: -20px;
+        margin-top: 7rem;
+        
     }
     .social-media a{
-        font-size: 20px;
+        margin-top: 2rem;
+        font-size: 50px;
         display:inline-block;
         
     }
-    .social-media{
-        margin-left: -20px;
-    }
+    
 
     
     nav .fa-solid{
@@ -404,6 +452,144 @@ nav .fa-solid{
         left: 25px;
         cursor: pointer;
     }
+
+    .fa-bars{
+        margin-top: 2rem;
+    }
+
+    #about{
+        margin-top: -200px;
+    }
+
+
+
+
+
+    .about-col-1{
+        margin-left: 20px;
+        margin-top: -30px;
+    }
+    .tab-titles{
+        margin-left: -4px;
+    }
+
+
+    .services-list{
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        grid-gap:40px;
+        margin-top: 50px;
+    }
+
+
+
+    .sub-title{
+        font-size: 55px;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 28px;
+    }
+    .tab-links{
+        font-size: 27px;
+        margin-right: 14px;
+    }
+    .tab-contents, .tab-contents ul li span{
+        font-size: 26px;
+    }
+
+    .btn.btn2{
+        margin-left: 10px;
+    }
+
+
+
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+}
+@media only screen and (max-width:600px){
+    .logo{
+        margin-left: -5rem;
+    }
+    #sidemenu{
+        margin-top: 0;
+        
+    }
+    
+    .header-text{
+        margin-top: 50%;
+        font-size: 25px;
+        margin-bottom: 4rem;
+    }
+    .header-text h1{
+        font-size: 50px;
+        margin-left: -3px;
+        margin-bottom: 1rem;
+    }
+
+    #hero{
+        background-image: none;
+        margin-top: 1rem;
+       
+    }
+    .btn2{
+        font-size: 25px;
+        width: fit-content;
+        margin-top: 7rem;
+        
+    }
+    .social-media a{
+        margin-top: 2rem;
+        font-size: 50px;
+        display:inline-block;
+        
+    }
+    
+
+    
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .fa-bars{
+        margin-top: 2rem;
+    }
+
+    #about{
+        margin-top: -250px;
+    }
+
 
 
 
@@ -439,8 +625,11 @@ nav .fa-solid{
         font-size: 14px;
     }
     .tab-links{
-        font-size: 16px;
-        margin-right: 20px;
+        font-size: 13px;
+        margin-right: 14px;
+    }
+    .tab-contents, .tab-contents ul li span{
+        font-size: 12px;
     }
 
     .btn.btn2{
@@ -456,8 +645,12 @@ nav .fa-solid{
 
 }
 
+
+
 #msg{
     color: #61b752;
     margin-top: -40px;
     display: block;
 }
+
+
