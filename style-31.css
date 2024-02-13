@@ -146,17 +146,6 @@ TABLE OF CONTENTS:
           animation: apldg_ZoomInZoomOut 12s infinite linear alternate;
 }
 
-@media (width: 5120px) {
-  .apihu-port-hero-area .apihu-port-hero-shape-1 {
-    left: 36vw;
-  }
-}
-
-@media (width: 2560px) {
-  .apihu-port-hero-area .apihu-port-hero-shape-1 {
-    left: 22vw;
-  }
-}
 
 @media (max-width: 1540px) {
   .apihu-port-hero-area .apihu-port-hero-shape-1 {
@@ -165,9 +154,10 @@ TABLE OF CONTENTS:
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 600px) {
   .apihu-port-hero-area .apihu-port-hero-shape-1 {
-    display: none;
+    top: 131vw;
+    left: 79vw;
   }
 }
 
@@ -180,17 +170,7 @@ TABLE OF CONTENTS:
           animation: apldg_rotate_animation 12s infinite linear alternate;
 }
 
-@media (width: 5120px) {
-  .apihu-port-hero-area .apihu-port-hero-shape-2 {
-    right: 45.5vw;
-  }
-}
 
-@media (width: 2560px) {
-  .apihu-port-hero-area .apihu-port-hero-shape-2 {
-    right: 41vw;
-  }
-}
 
 @media (max-width: 1540px) {
   .apihu-port-hero-area .apihu-port-hero-shape-2 {
@@ -198,9 +178,10 @@ TABLE OF CONTENTS:
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 600px) {
   .apihu-port-hero-area .apihu-port-hero-shape-2 {
-    display: none;
+    right: 83vw;
+    top: 30vw;
   }
 }
 
@@ -213,17 +194,7 @@ TABLE OF CONTENTS:
           animation: apldg_rotate_animation 12s infinite linear alternate;
 }
 
-@media (width: 5120px) {
-  .apihu-port-hero-area .apihu-port-hero-shape-3 {
-    right: 47vw;
-  }
-}
 
-@media (width: 2560px) {
-  .apihu-port-hero-area .apihu-port-hero-shape-3 {
-    right: 44vw;
-  }
-}
 
 @media (max-width: 1540px) {
   .apihu-port-hero-area .apihu-port-hero-shape-3 {
@@ -232,9 +203,10 @@ TABLE OF CONTENTS:
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 600px) {
   .apihu-port-hero-area .apihu-port-hero-shape-3 {
-    display: none;
+    right: 24vw;
+    top: 43vw;
   }
 }
 
@@ -247,17 +219,7 @@ TABLE OF CONTENTS:
           animation: apldg_rotate_animation 10s infinite linear alternate;
 }
 
-@media (width: 5120px) {
-  .apihu-port-hero-area .apihu-port-hero-shape-4 {
-    right: 32vw;
-  }
-}
 
-@media (width: 2560px) {
-  .apihu-port-hero-area .apihu-port-hero-shape-4 {
-    right: 14vw;
-  }
-}
 
 @media (max-width: 1540px) {
   .apihu-port-hero-area .apihu-port-hero-shape-4 {
@@ -266,12 +228,12 @@ TABLE OF CONTENTS:
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 600px) {
   .apihu-port-hero-area .apihu-port-hero-shape-4 {
-    display: none;
+    right: 109px;
+    top: 360px;
   }
 }
-
 .apihu-port-hero-area .apihu-port-hero-shape-5 {
   position: absolute;
   top: 50px;
@@ -282,17 +244,7 @@ TABLE OF CONTENTS:
           animation: apldg_rotate_animation 30s infinite linear alternate;
 }
 
-@media (width: 5120px) {
-  .apihu-port-hero-area .apihu-port-hero-shape-5 {
-    left: 30vw;
-  }
-}
 
-@media (width: 2560px) {
-  .apihu-port-hero-area .apihu-port-hero-shape-5 {
-    left: 25vw;
-  }
-}
 
 @media (max-width: 1540px) {
   .apihu-port-hero-area .apihu-port-hero-shape-5 {
@@ -301,9 +253,11 @@ TABLE OF CONTENTS:
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 600px) {
   .apihu-port-hero-area .apihu-port-hero-shape-5 {
-    display: none;
+    
+    top: 90px;
+    left: 354px;
   }
 }
 

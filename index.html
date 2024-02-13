@@ -3,15 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio website</title>
+    <title>Usha Suwal</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style-31.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    
 
 
     <script
       src="https://kit.fontawesome.com/14dea2b7a9.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="icon" href="images\icon1.ico" type="image/x-icon" />
   </head>
   <body>
     <section class="apihu-port-hero-area" id="apihu-port-hero">
@@ -21,7 +26,7 @@
 			<img class="apihu-port-hero-shape-1" src="images/tab.png" alt="Shape" style="width: 30px;">
 			<img class="apihu-port-hero-shape-2" src="images/python.png" alt="Shape" style="width: 30px;">
 			<img class="apihu-port-hero-shape-3" src="images/react.png" alt="Shape" style="width: 30px;">
-			<img class="apihu-port-hero-shape-4" src="images/html.png" alt="Shape" style="width: 30px;">
+			<img class="apihu-port-hero-shape-4" src="images/html2.png" alt="Shape" style="width: 30px;">
 			<img class="apihu-port-hero-shape-5" src="images/tailwind.png" alt="Shape" style="width: 30px;">
 				
 			
@@ -194,41 +199,89 @@
     <div id="services">
       <div class="container">
         <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-chart-simple"></i>
-            <h2>Data Analysis & Visualization</h2>
-            <p>
-              Turning data into insights, visualizing trends for informed
-              decision-making in impactful manner.
-            </p>
-            <a href="Service1.html#services1">Learn more</a>
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+    
+                  <div class="card-image">
+                    <img src="images/html.png" alt="" class="card-img" />
+                  </div>
+                </div>
+    
+                <div class="card-content">
+                  <h2 class="name">Frontend Design</h2>
+                  <p class="description">
+                    Designing interactive, user-centric frontend experiences.
+                  </p>
+                  
+                  <a href="Service1.html#services3" class="buttonnn">Learn More</a>
+                </div>
+              </div>
+    
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+    
+                  <div class="card-image">
+                    <img src="images/stat.png" alt="" class="card-img" />
+                  </div>
+                </div>
+    
+                <div class="card-content">
+                  <h2 class="name">Data Analyst</h2>
+                  <p class="description">
+                    Data-driven insights, impactful visualization trends.
+                  </p>
+                  <a href="Service1.html#services1" class="buttonnn">Learn More</a>
+                </div>
+              </div>
+    
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+    
+                  <div class="card-image">
+                    <img src="images/gear.png" alt="" class="card-img" />
+                  </div>
+                </div>
+    
+                <div class="card-content">
+                  <h2 class="name">ML Modeling</h2>
+                  <p class="description">
+                    ML predicts, insights drive precise decisions.
+                  </p>
+                  <a href="Service1.html#services2" class="buttonnn">Learn More</a>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+    
+                  <div class="card-image">
+                    <img src="images/video.png" alt="" class="card-img" />
+                  </div>
+                </div>
+    
+                <div class="card-content">
+                  <h2 class="name">Content Creator</h2>
+                  <p class="description">
+                    Share tasty adventures with food videography and photography.
+                  </p>
+                  <a href="Service1.html#services4" class="buttonnn">Learn More</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <i class="fa-solid fa-gears"></i>
-            <h2>ML Modeling & Predictive Analytics</h2>
-            <p>
-              ML models predict; data-driven insights guide decisions for
-              precision and strategy.
-            </p>
-            <a href="Service1.html#services2">Learn more</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Frontend Design</h2>
-            <p>
-              Frontend design crafts user-friendly interfaces, blending
-              aesthetics and functionality seamlessly.
-            </p>
-            <a href="Service1.html#services3">Learn more</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-photo-film"></i>
-            <h2>Content Creator</h2>
-            <p>Share tasty adventures with food videography and photography.</p>
-            <a href="Service1.html#services4">Learn more</a>
-          </div>
+    
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <br><br>
+          <div class="swiper-pagination"></div>
         </div>
+        
       </div>
     </div>
 
@@ -241,9 +294,9 @@
             <div class="work">
                 <img src="images/asa.png" alt="work1" />
                 <div class="layer">
-                  <h3>ASA Design & Builders Website</h3>
+                  <h3>ASA Design Website</h3>
                   <p>
-                    ASA Design & Builders: Real estate showcase with modern design.
+                    Real estate showcase with modern design.
                   </p>
                   <a href="https://aasa-design-and-builder.000webhostapp.com/" target="_blank"
                     ><i class="fa-solid fa-arrow-up-right-from-square"></i
@@ -472,5 +525,18 @@
         setTimeout(type, newTextDelay + 250);
       });
     </script>
+
+    <!-- transition -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const headerText = document.querySelector(".header-text h1");
+        headerText.classList.add("loaded");
+      });
+    </script>
+    
   </body>
+  <script src="swiper-bundle.min.js"></script>
+
+  <script src="slider.js"></script>
 </html>

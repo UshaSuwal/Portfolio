@@ -11,6 +11,18 @@ body{
     background-color: #080808;
     color: #fff;
 }
+
+.header-text h1 {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  }
+  
+  .header-text h1.loaded {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
 #header{
     width: 100%;
     height: 4rem;
@@ -79,7 +91,7 @@ nav ul li a:hover::after{
 }
 .header-text h1{
     font-size: 60px;
-    margin-top: 130px;
+    margin-top: 120px;
     margin-bottom: 10px;
     
 }
@@ -116,7 +128,7 @@ nav ul li a:hover::after{
 }
 
 .social-media{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .social-media a:hover{
     color: #ff004f;
@@ -211,39 +223,7 @@ nav ul li a:hover::after{
 #services{
     padding: 30px 0;
 }
-.services-list{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    grid-gap:40px;
-    margin-top: 50px;
-}
-.services-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition-duration: 0.4s;
-}
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-.services-list div a{
-    color: #fff;
-    font-size: 14px;
-    margin-top: 20px;
-    display: inline-block;
-}
-.services-list div:hover{
-    background: #ff004f;
-    transform: translateY(-10px);
-}
+
 
 /*---------------Portfolio----------------------*/
 #portfolio{
@@ -408,6 +388,7 @@ nav .fa-solid{
 
     #hero{
         background-image: none;
+        
         margin-top: -6rem;
        
     }
@@ -474,12 +455,7 @@ nav .fa-solid{
     }
 
 
-    .services-list{
-        display:grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-        grid-gap:40px;
-        margin-top: 50px;
-    }
+    
 
 
 
@@ -526,7 +502,7 @@ nav .fa-solid{
     
     .header-text{
         margin-top: 50%;
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 4rem;
     }
     .header-text h1{
@@ -603,12 +579,7 @@ nav .fa-solid{
     }
 
 
-    .services-list{
-        display:grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-        grid-gap:40px;
-        margin-top: 50px;
-    }
+    
 
 
 
@@ -644,6 +615,16 @@ nav .fa-solid{
     }
 
 }
+
+
+
+
+
+
+  
+
+  
+  
 
 
 
