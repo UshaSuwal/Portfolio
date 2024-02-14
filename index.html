@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="icon" href="images\icon1.ico" type="image/x-icon" />
+    <link rel="icon" href="images\icon.ico" type="image/x-icon" />
   </head>
   <body>
     <section class="apihu-port-hero-area" id="apihu-port-hero">
@@ -28,17 +28,16 @@
 			<img class="apihu-port-hero-shape-3" src="images/react.png" alt="Shape" style="width: 30px;">
 			<img class="apihu-port-hero-shape-4" src="images/html2.png" alt="Shape" style="width: 30px;">
 			<img class="apihu-port-hero-shape-5" src="images/tailwind.png" alt="Shape" style="width: 30px;">
-				
-			
-			
-			
 		</section>
+
+
+    <!-- header -->
     <div id="header">
       <div class="container">
         <nav>
           <img src="images/logo3.png" class="logo" alt="logo" />
           <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
+            <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">My Work</a></li>
@@ -49,8 +48,10 @@
         </nav>
       </div>
     </div>
+
+
+    <!-- hero part -->
     <div id="hero">
-     
       <div class="container">
         <div class="header-text">
           <h1>
@@ -90,10 +91,11 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/ush_about.jpg" alt="user" />
+            <img src="images/ush_about.jpg" alt="user" class="photo-transition" id="about-photo" />
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
+            
+            <h1 class="sub-title about-transition" id="about-content">About Me</h1>
             <br />
             <p>
               Hello! I'm Usha Suwal, an undergraduate IT student from Bhaktapur,
@@ -151,7 +153,7 @@
                     >Numpy,Pandas,Matplotlib,Plotly,Seaborn,Scikit-Learn</span
                   >
                 </li>
-                <li><span>C,C++</span></li>
+                <li><span>C, C++, MySQL, Dart and Flutter</span></li>
               </ul>
             </div>
             <div class="tab-contents" id="education">
@@ -433,6 +435,10 @@
       </div>
     </div>
 
+    <button class="scroll-up-btn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
@@ -533,6 +539,55 @@
         const headerText = document.querySelector(".header-text h1");
         headerText.classList.add("loaded");
       });
+    </script>
+
+
+    <!-- transition of about me -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const aboutContent = document.getElementById("about-content");
+    const aboutPhoto = document.getElementById("about-photo");
+  
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5, // Trigger when 50% of the element is visible
+    };
+  
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                aboutContent.classList.add("show");
+                aboutPhoto.classList.add("show");
+            }
+        });
+    }, options);
+  
+    observer.observe(aboutContent);
+    observer.observe(aboutPhoto);
+});
+
+
+
+    </script>
+
+    <script>
+      window.addEventListener('scroll', () => {
+    const scrollUpButton = document.querySelector('.scroll-up-btn');
+    if (window.scrollY > 300) {
+        scrollUpButton.style.display = 'block';
+    } else {
+        scrollUpButton.style.display = 'none';
+    }
+});
+
+document.querySelector('.scroll-up-btn').addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
     </script>
     
   </body>

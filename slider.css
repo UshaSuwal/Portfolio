@@ -113,11 +113,11 @@ body{
 }
 
 .swiper-navBtn{
-    color: #6E93f7;
+    color: #6E93f7;     /* not working */
     transition: color 0.3s ease;
 }
 .swiper-navBtn:hover{
-    color: red;
+    color:rgb(221, 255, 0) ;
 }
 .swiper-navBtn::before, .swiper-navBtn::after{
     font-size: 40px;
