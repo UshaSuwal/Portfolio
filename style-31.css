@@ -109,8 +109,8 @@ TABLE OF CONTENTS:
   position: absolute;
   top: 224px;
   left: 302px;
-  -webkit-animation: apldg_ZoomInZoomOut 12s infinite linear alternate;
-          animation: apldg_ZoomInZoomOut 12s infinite linear alternate;
+  -webkit-animation: apldg_ZoomInZoomOut 3s infinite linear alternate;
+          animation: apldg_ZoomInZoomOut 3s infinite linear alternate;
 }
 
 
@@ -133,8 +133,8 @@ TABLE OF CONTENTS:
   top: 165px;
   right: 720px;
   width: 80px;
-  -webkit-animation: apldg_rotate_animation 12s infinite linear alternate;
-          animation: apldg_rotate_animation 12s infinite linear alternate;
+  -webkit-animation: apldg_rotate_animation 10s infinite linear alternate;
+          animation: apldg_rotate_animation 10s infinite linear alternate;
 }
 
 
@@ -157,8 +157,8 @@ TABLE OF CONTENTS:
   bottom: 142px;
   right: 770px;
   width: 80px;
-  -webkit-animation: apldg_rotate_animation 12s infinite linear alternate;
-          animation: apldg_rotate_animation 12s infinite linear alternate;
+  -webkit-animation: apldg_rotate_animation 10s infinite linear alternate;
+          animation: apldg_rotate_animation 10s infinite linear alternate;
 }
 
 
@@ -182,8 +182,8 @@ TABLE OF CONTENTS:
   bottom: 100px;
   right: 72px;
   width: 90px;
-  -webkit-animation: apldg_rotate_animation 18s infinite linear alternate;
-          animation: apldg_rotate_animation 10s infinite linear alternate;
+  -webkit-animation: apldg_rotate_animation 16s infinite linear alternate;
+          animation: apldg_rotate_animation 8s infinite linear alternate;
 }
 
 
@@ -207,8 +207,8 @@ TABLE OF CONTENTS:
   left: 500px;
   size: 30px;
   width: 90px;
-  -webkit-animation: apldg_rotate_animation 30s infinite linear alternate;
-          animation: apldg_rotate_animation 30s infinite linear alternate;
+  -webkit-animation: apldg_rotate_animation 28s infinite linear alternate;
+          animation: apldg_rotate_animation 28s infinite linear alternate;
 }
 
 
